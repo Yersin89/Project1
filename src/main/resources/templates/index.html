@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/Header.js"></script>
+    <script src="/js/AddStudent.js"></script>
+</head>
+<body>
+<div class="container">
+    <div id="header"></div>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Номер</th>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Баллы</th>
+            <th>Оценка</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="student : ${students}">
+            <td th:text="${student.id}" th:style="${student.exam < 50} ? 'color: red;' : 'color: black;'"></td>
+            <td th:text="${student.name}" th:style="${student.exam < 50} ? 'color: red;' : 'color: black;'"></td>
+            <td th:text="${student.surName}" th:style="${student.exam < 50} ? 'color: red;' : 'color: black;'"></td>
+            <td th:text="${student.exam}" th:style="${student.exam < 50} ? 'color: red;' : 'color: black;'"></td>
+            <td th:text="${student.mark}" th:style="${student.exam < 50} ? 'color: red;' : 'color: black;'"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

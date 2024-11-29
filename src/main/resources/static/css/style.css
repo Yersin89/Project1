@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    background-color: steelblue;
+}
+
+.navbar-brand, .nav-link {
+    color: white;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+.btn-outline-success {
+    color: white;
+    border-color: white;
+    background-color: steelblue;
+}
+
+.btn-outline-success:hover {
+    background-color: white;
+    color: steelblue;
+    border-color: steelblue;
+}
+
+.container {
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 8px;
+}
+.text-danger {
+    color: red;
+}
+.text-dark {
+    color: black;
+}
